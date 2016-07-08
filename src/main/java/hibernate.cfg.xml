@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">bondstone</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="com.cooksys.backend.solid.model.FilmList" />
+        <mapping class="com.cooksys.backend.solid.model.User" />
+        <mapping class="com.cooksys.backend.solid.model.Film" />
+        <mapping class="com.cooksys.backend.solid.model.Language" />
+        <mapping class="com.cooksys.backend.solid.model.StaffList" />
+        <mapping class="com.cooksys.backend.solid.model.Actor" />
+        <mapping class="com.cooksys.backend.solid.model.FilmActor" />
+        <mapping class="com.cooksys.backend.solid.model.Payment" />
+        <mapping class="com.cooksys.backend.solid.model.FilmCategory" />
+        <mapping class="com.cooksys.backend.solid.model.SalesByStore" />
+        <mapping class="com.cooksys.backend.solid.model.Category" />
+        <mapping class="com.cooksys.backend.solid.model.Customer" />
+        <mapping class="com.cooksys.backend.solid.model.Store" />
+        <mapping class="com.cooksys.backend.solid.model.FilmText" />
+        <mapping class="com.cooksys.backend.solid.model.Staff" />
+        <mapping class="com.cooksys.backend.solid.model.SalesByFilmCategory" />
+        <mapping class="com.cooksys.backend.solid.model.NicerButSlowerFilmList" />
+        <mapping class="com.cooksys.backend.solid.model.City" />
+        <mapping class="com.cooksys.backend.solid.model.Inventory" />
+        <mapping class="com.cooksys.backend.solid.model.ActorInfo" />
+        <mapping class="com.cooksys.backend.solid.model.Address" />
+        <mapping class="com.cooksys.backend.solid.model.CustomerList" />
+        <mapping class="com.cooksys.backend.solid.model.Rental" />
+        <mapping class="com.cooksys.backend.solid.model.Country" />
+    </session-factory>
+</hibernate-configuration>
